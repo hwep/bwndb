@@ -1,40 +1,979 @@
+
+
+
+
+
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title></title>
-		<style>
-			.box{
-				width: 400px;
-				border: 1px solid black;
-				overflow:hidden;
-			}
-			.left{
-				float: left;
-				background-color: red;
-			}
-			.right{
-				float: right;
-				background-color: blue;
-			}
-			h2{
-				float: left;
-				margin: 0;
-				height: 30px;
-			}
-		</style>
-		<!--
-			解决方案：float: left;
-		-->
-	</head>
-	<body>
-		<div class="box">
-			<div class="left">
-				<h2>左边</h2>
-			</div>
-			<div class="right">
-				<h2>右边</h2>
-			</div>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta name="keywords" content="百威诺顿啤酒集团(中国)有限公司"/>
+    <meta name="description" content="百威诺顿啤酒(中国)有限公司，相比较其他啤酒品牌，拥有先进的德国制作工艺和德国设备；带来的啤酒味道更">
+    <link rel='canonical' href='https://www.meipian.cn/pa8vt9t' />
+    <title>百威诺顿啤酒集团(中国)有限公司 - 美篇</title>
+    <link rel="shortcut icon" href="http://static2.ivwen.com/web/a/favicon.ico" />
+    <link rel="stylesheet" type="text/css" id="style" href="css/044.css" />    <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_x7ybzjf62e78ehfr.css" />
+    <link rel="stylesheet" type="text/css" href="https://ss2.meipian.me/article/static/vue-video.css?56">
+    <script type="text/javascript" src="https://cdn.staticfile.org/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bootcss.com/vue/2.3.2/vue.min.js"></script>
+    <script type="text/javascript" src="https://ss2.meipian.me/article/static/vue-video.js?56"></script>
+        <script>
+        $theme = parseInt(44);
+    </script>
+    <script src="https://ss2.meipian.me/theme/v2/js/adjustColor.js?8"></script>
+    <style>
+        @font-face {font-family: "custorm-video";
+            src: url('https://ss2.meipian.me/article/static/iconfont.eot?t=1491818377252');
+            src: url('https://ss2.meipian.me/article/static/iconfont.eot?t=1491818377252#iefix') format('embedded-opentype'),
+            url('https://ss2.meipian.me/article/static/iconfont.woff?t=1491818377252') format('woff'),
+            url('https://ss2.meipian.me/article/static/iconfont.ttf?t=1491818377252') format('truetype'),
+            url('https://ss2.meipian.me/article/static/iconfont.svg?t=1491818377252#iconfont') format('svg');
+        }
+
+        #main-box .video-style,
+        #main-box .video-style .vue-pwa-video-box,
+        #main-box .video-style .vue-pwa-video-time,
+        #main-box .video-style .vue-pwa-video-progress-bar,
+        #main-box .vue-pwa-video-tool button {
+            background-color: transparent;
+        }
+
+        #main-box .vue-pwa-video {
+            border-bottom-width: 0;
+        }
+
+        #main-box video {
+            width: 100%;
+            height: 100%;
+            background: #000;
+        }
+
+        #main-box .video-style .vue-pwa-video-time,
+        #main-box .vue-pwa-video-tool button {
+            color: #fff;
+        }
+
+        #main-box .vue-pwa-video-tool button {
+            width: 22px;
+            font-family: 'custorm-video' !important;
+        }
+
+        #main-box .vue-pwa-video-tool button:hover {
+            text-shadow: 0 0 5px rgba(255, 255, 255, .8);
+        }
+
+        #main-box .video-style .vue-pwa-video-time {
+            font-size: 10px;
+            width: 30px;
+        }
+
+        #main-box .video-style .vue-pwa-video-waiting:before {
+            content: '';
+            background-repeat: no-repeat;
+            background-size: 40px;
+            background-position: center;
+            background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAAAsVBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+3mHKcAAAAO3RSTlMABCoIUQ0lIFcw8K7qheRcORXVNBH4dIDaqEjIs0z8a2c934mVb2NEnJAZzMO3e6DQYL+kmEH0u3gcjeNxuWsAAAR+SURBVGjerNbpVrJQGIbhh0HTlHAKDDUwFQechzLP/8C+l72RVz6HVLjqZ+u52WxbS9ytoXYdveD7pu7s1AYyVd159nZDPkhJ+BhbzgRZUOp+bzRaLBaJQDs021hdBenkzfF2RC4FZrPZz09poKZ4+Ird3xJR4ECYEPsUIOtNR3luvmv0+xwgfIJEYL0u6RoeVjfG/WRgw4E2B2h/Op22HTxm4o4JFy6dgAOk1X/B/RSndzhwgQPnJ1gfA62pq+BODbdHgcNjAbKY4C6q3SNxYUsuB/gNtYRgvcMdhobBgajAt3wpIAtBKwgCF3/SjWSARJ+jg7Uq6I6jm549OtunAFkubQU3KaZBuBAF+gPnRUn8Xb5gtM8CSzLWbu6vbPu84NaVK/+JMtDiA5DFrYJpU4ALYaDXyeGqht8+fUGkVqv1FVyj28SQCRkwhhpuypmzZIAYuGI3t6X4CIUc/tSYJ+fJABfl5yLAt7B/wV2KpUSgWWsOLz6JNQ9xwtRwp1yP5ynQbAa/lz5A+7lwDFTwgEJw8vykdH7R3f2eC0TFQ3atZTxPviz8p2rtTwv0+h9Ub4lAtP/VzCOpYFmcsOe0/3CBjnCcJx9IUC0ROCZUPGHIzx/SEzfsWRGRqOMpppyX3gINrDiI5kVAx5PGNN+U88RHTPEH5HgGT8OTcuvo6YVA4RsYCFHgF0+r8z4x+eW5A044SOFA87EWf0dxueBqSKFai8bLb+VyuQJpR4G4UUcqbrQvHI5X7HKBbjiVXE0+vvAlx/Ke57nHRgUpWTQuvZbLunxDnscJDSlVKRAX+giZHokiHaS2kdv08/paA8n5HssjNT3cp1/hBYDqh2TFV5Ca9kbjR6vwCk4CHWSg9MpGADorP1ZEBgZy+zs0De94xYUqMlAU8zJQBrQV4ytIQ6Pt2ASTFdORiZqYfv9+JzvkTUEEhshE+52ZUMW8rFSQifE7cynAisiEIaY/hT2KJlORiT2t075goF5geWTC/WTjf7WUsW7DIBBADzAmVFFlGrqk8uBGlSs6dfDA//9Yr0cwJOpS5e4hZXyP4yKD5w8cusDlJqCBBY0vRAf5Bt0FPPDw9lo5RhiHBldAH+u3aABww2E/CzAxvz/9cvwAgDA0VuAiXL6eXz5pp6baZzwKBJhJTr9zBAE2UhdGEMDPlfP5BAK4LrBKLMEWeSGBANu54UEAX+0rooCftOsRBwKsO9u2SIygO/+WgZ9Y5AgGJokRJvIvhRH4SeX2lJgmC/xMC1L8y3RSwE6+2gsCj6SmpQucErATOj0SgR1f9RTw/Is2Vz/pvdf8BUd6wssUdNWTX2v2PZiqJz+SFfASyd8CozPAS673L34kMA/hbvyIy5G/0PuRbFmnGL32t/6cUjScM6D9PhBCsIZtjlz9biR/CYQYrTVGKYZOaPe/C1CCoWDHAgUS+ilAego8nlCuDVACMVLgOgFDInQPlMjfTcBSUKlt4I+AgcexuW5AJECJJBqgRNgDlnUHDWXbAO1vyouxdwEBlDGCE7QM8V/9D+zgDDocvVCNAAAAAElFTkSuQmCC");
+        }
+
+        #main-box .video-style button:first-child {
+            margin-right: 15px;
+        }
+
+        #main-box .video-style button:last-child {
+            margin-left: 15px;
+        }
+
+        #main-box .video-style .vue-pwa-video-progress-bar {
+            margin: 0 10px 0 13px;
+        }
+
+        #main-box .video-style .vue-pwa-video-progress-bar .vue-app-range-thumb:before {
+            position: absolute;
+            content: '';
+            left: 4px;
+            top: 4px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: #57A7FF;
+        }
+
+        #main-box .video-style .vue-pwa-video-progress-bar .vue-app-range-runway {
+            background-color: rgba(0, 0, 0, .2);
+        }
+
+        #main-box .video-style .vue-pwa-video-progress-bar .vue-app-range-loading {
+            background-color: rgba(255, 255, 255, .5);
+        }
+
+        #main-box .video-style .vue-pwa-video-progress-bar .vue-app-range-progress {
+            background-image: linear-gradient(90deg, #57A7FF, #3266FF);
+        }
+
+        #main-box .vue-pwa-video {
+            border-bottom-width: 0;
+        }
+
+        #main-box .vue-pwa-video-tool .vue-pwa-video-btn-paused:before {
+            content: '\e615';
+        }
+
+        #main-box .vue-pwa-video-tool .vue-pwa-video-btn-playing:before {
+            content: '\e614';
+        }
+
+        #main-box .vue-pwa-video-tool .vue-pwa-video-btn-screen:before {
+            content: '\e617';
+        }
+
+        #main-box .vue-pwa-video-tool .vue-pwa-video-btn-full:before {
+            content: '\e616';
+        }
+
+        #main-box .vue-pwa-video-tool {
+            height: 75px;
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), transparent);
+            background-color: transparent;
+            padding: 38px 15px 15px;
+            border-left-width: 0;
+            border-right-width: 0;
+        }
+    </style>
+        <script type="text/javascript" src="https://ss2.meipian.me/theme/v2/js/jquery.md5.js"></script>
+    <script type="text/javascript" src="https://ss2.meipian.me/theme/v2/js/uuid.js"></script>
+    <script type="text/javascript" src="https://ss2.meipian.me/theme/v2/js/meipian.js?4"></script>
+    <style type="text/css">
+        .mp-section {
+            word-break: break-word;
+        }
+        s {
+             display: block;
+             text-decoration: none !important;
+         }
+        @-webkit-keyframes rot{
+            from{transform: rotateY(0);-webkit-transform: rotateY(0);}
+            to{transform: rotateY(-360deg);-webkit-transform: rotateY(-360deg);}
+        }
+        @keyframes rot{
+            from{transform: rotateY(0);-webkit-transform: rotateY(0);}
+            to{transform: rotateY(-360deg);-webkit-transform: rotateY(-360deg);}
+        }
+        .rot{
+            animation-name: rot;
+            animation-duration: .5s;
+            animation-iteration-count: infinite;
+            animation-delay: 0s;
+            animation-fill-mode: forwards;
+            animation-timing-function: linear;
+            -webkit-animation-name: rot;
+            -webkit-animation-duration: .5s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-delay: 0s;
+            -webkit-animation-fill-mode: forwards;
+            -webkit-animation-timing-function: linear;
+        }
+        #redpacket,#packetBg{
+            position: fixed !important;
+        }
+    </style>
+    <script>
+    var $UA = getUserAgent(window.navigator.userAgent).os.name;
+
+    if ($UA != 'ios' && $UA != 'android') {
+        $UA = 'pc';
+    }
+
+    function downloadStat(from, word) {
+//        if (window.navigator.userAgent.match(/MicroMessenger/)) {
+//            $.ajax({
+//                type: 'GET',
+//                url: '//' + from + '&ua=' + $UA + '&word=promo1',
+//                success:function() {
+//                    window.location.href = '//';
+//                },
+//                error: function () {
+//                    window.location.href = '//';
+//                }
+//            });
+//            return
+//        }
+
+        var url;
+        if (typeof word === 'undefined')
+        {
+            url = 'https://www.meipian.cn/app/http/download.php?from=' + from + '&ua=' + $UA
+        }
+        else
+        {
+            url = 'https://www.meipian.cn/app/http/download.php?from=' + from + '&ua=' + $UA + '&word=' + word
+        }
+
+        $channel = 'g_f=991653';
+        if (from == 'top_banner') {
+            $channel = 'ckey=CK1364990043951';
+        } else if (from == 'bottom_banner') {
+            $channel = 'ckey=CK1364990363622';
+        } else if (from == 'column') {
+            $channel = 'ckey=CK1364990506736';
+        } else if (from == 'column_banner') {
+            $channel = 'ckey=CK1364990519645';
+        }
+
+        $.ajax({
+            type: 'GET',
+            url: url,
+            success:function() {
+                window.location.href = 'http://a.app.qq.com/o/simple.jsp?pkgname=com.lanjingren.ivwen&' + $channel
+            },
+            error: function () {
+                window.location.href = 'http://a.app.qq.com/o/simple.jsp?pkgname=com.lanjingren.ivwen&' + $channel
+            }
+        });
+    }
+</script><link rel="stylesheet" type="text/css" href="css/download.css"/><script>
+    $(function() {
+        if($(".meipian-content").length == 0) {
+            var content = $(".mp-content");
+        }else{
+            var content = $(".meipian-content");
+        }
+        var img = content.find("img").last();
+        img.load(function() {
+            var scrollHeight = $(window).scrollTop();
+            function getHeight(){
+                if($(".section").length == 0){
+                    var section = $(".mp-section");
+                }else{
+                    var section = $(".section");
+                }
+                var screenHeight = $(window).height() * 3;//超过文章内容超过4倍高度执行文章折叠
+                var contentHeight = content.height();
+                var notFoldHeight = null;
+                var foldHeight = null;
+                var otherTop = $(section[0]).offset().top;
+                for(var i = 0, len = section.length; i < len; i++) {
+                    if($(section[i]).offset().top - otherTop >= screenHeight) {
+                        notFoldHeight = $(section[i]).offset().top - otherTop;
+                        foldHeight = contentHeight - notFoldHeight;
+                        if(foldHeight > $(window).height() * 2) {
+                            return notFoldHeight;
+                        }else{
+                            return null;
+                        }
+                    }
+                }
+                return null;
+            }
+            if(getHeight() && $(window).height() * 5 < content.height()) {
+                if(scrollHeight + $(window).height() < $(window).height() * 3) {
+                    content.css({
+                        "height":getHeight(),
+                        "overflow":"hidden"
+                    });
+                    content.after('<div id="loadMore"><p><a href="javascript:void(0);"><span>展开阅读全文</span><span class="iconfont icon-arrow"></span></a></p></div>');
+                    $("#loadMore").click(function() {
+                        $(this).remove();
+                        content.css({"height":"auto"});
+                    });
+                }
+            }
+        });
+    });
+</script><script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?8e3083d000c3b20677d54943fd264b4d";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script><script>
+    (function(){
+        var src = (document.location.protocol == "http:") ? "http://js.passport.qihucdn.com/11.0.1.js?d43ac1980ebec30c4cace581a55e3aa7":"https://jspassport.ssl.qhimg.com/11.0.1.js?d43ac1980ebec30c4cace581a55e3aa7";
+        document.write('<script src="' + src + '" id="sozz"><\/script>');
+    })();
+</script><script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-98206905-1', 'auto');
+    ga('send', 'pageview');
+</script><div id="download_bar" class="download_bar" style="display:none">
+	<div class="title">
+		<img class="logo" src="http://static2.ivwen.com/web/a/logo.png" alt="美篇">
+		<p>
+			<span class="name">美篇</span>
+			<span class="desc">你也能发这样的图文</span>
+		</p>
+		<a href="javascript:;" id="download_btn" class="download_btn" style="top: 0"></a>
+	</div>
+	<a id="close_btn" class="close_btn" href="#"><img class="close_icon" src="http://static2.ivwen.com/web/a/close.png"></a>
+</div>
+<script>
+	if (navigator.userAgent.match(/iPhone OS 9/i))
+	{
+		document.querySelector(".download_bar").classList.add("ios9");
+	}
+	if (navigator.userAgent.match(/iPhone OS 10/i))
+	{
+		document.querySelector(".download_bar").classList.add("ios9");
+	}
+	document.getElementById('download_btn').innerText = window.navigator.userAgent.match(/MicroMessenger/) ? ' 马上制作 ' : ' 马上制作 ';
+  var close = false;
+  
+  var mq = window.matchMedia( "(max-width: 1024px)" );
+  mq.addListener(WidthChange);
+  WidthChange(mq);
+  function WidthChange(mq) {
+    if (mq.matches) {
+      $("body").css({"paddingTop": "40px"});
+    } else {
+      $("body").css({"paddingTop": "0"});
+    }
+
+  }
+  $("#download_bar").css({"display":"block"});
+  $("#close_btn").click(function(e) {
+      e.stopPropagation();
+      close = true;
+      $("#download_bar").stop(true).fadeOut("slow");
+      $("body").css({"paddingTop": 0})
+      return false;
+  });
+	
+
+	$("#download_bar").click(function() {
+		downloadStat('top_banner')
+	});
+</script></head><body><link rel="stylesheet" href="https://ss2.meipian.me/theme/v2/css/seo/seo_header.css">
+<div id="seo-header">
+    <div id="nav-left">
+        <a  href="https://www.meipian.cn/hot" target="_blank">热点</a><a  href="https://www.meipian.cn/photo" target="_blank">摄影</a><a  href="https://www.meipian.cn/tour" target="_blank">旅行</a><a  href="https://www.meipian.cn/beauty" target="_blank">女神</a><a  href="https://www.meipian.cn/life" target="_blank">生活</a><a  href="https://www.meipian.cn/fiction" target="_blank">美文</a><a  href="https://www.meipian.cn/baby" target="_blank">亲子</a><a  href="https://www.meipian.cn/hobby" target="_blank">兴趣</a><a  href="https://www.meipian.cn/food" target="_blank">美食</a>    </div>
+    <div id="breadcrumb">
+        <div class="box">
+            <a href="https://www.meipian.cn/" target="_blank" id="logo"></a>
+            <a href="https://www.meipian.cn/" target="_blank">&nbsp;&nbsp;首页&nbsp;&nbsp;</a>
+            <span>/</span>
+            <a href="https://www.meipian.cn/hot" target="_blank">&nbsp;&nbsp;其它&nbsp;&nbsp;</a><span>/</span><span id="title">&nbsp;&nbsp;&nbsp;&nbsp;百威诺顿啤酒集团(中国)有限公司</span>        </div>
+    </div>
+    <div id="block"></div>
+</div>
+<div id="main-box"><link rel="stylesheet" href="https://ss2.meipian.me/theme/v2/css/seo/seo_topBar.css">
+<div id="side-bar" class="side-bar only-pc" style="bottom: 320px;">
+    <div id="toTop" class="item bg"></div>
+    <div class="code code_android item bg">
+        <div class="bigCode bg"></div>
+    </div>
+    <div class="code code_wechat item bg">
+        <div class="bigCode bg"></div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        var bar = document.querySelector('.side-bar');
+        var toTop = document.getElementById('toTop');
+
+        if (toTop) {
+            toTop.onclick = function () {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 400)
+            };
+        }
+    })
+</script><div class="meipian-bg"></div>
+<div class="meipian">
+<div class="meipian-main">
+	<div class="mp-header">
+		<div class="create-time">2017.08.01</div>
+		<div class="user-head">
+			<a class="toappuser" href="https://www.meipian.cn/c/16517855"><img src="http://static2.ivwen.com/users/16517855/46c334bf17cb4920944c444e670da295.jpg" /></a>
 		</div>
-	</body>
-</html>
+		<i id="music_icon" class="iconfont icon-music" onclick="switchsound()"></i>
+            <audio id="audio" style="display:none;" controls="controls" loop="loop" src="http://static2.ivwen.com/music/LiangZhu.m4a"></audio>
+            <script>
+            var icon = document.getElementById("music_icon");
+            var audio = document.getElementById("audio");
+            var timestamp = 0;
+            
+            function switchsound() {
+                if (audio == null) {
+                    audio = document.getElementById("audio");
+                }
+                if (audio.paused) {
+                    audio.play();
+                    document.getElementById("music_icon").setAttribute("play", "stop");
+                    $("#musicControl").attr("play", "stop")
+                } else if (new Date().getTime() > timestamp + 1000) {
+                    audio.pause();
+                    document.getElementById("music_icon").setAttribute("play", "on");
+                    $("#musicControl").attr("play", "on")
+                }
+            }
+            
+            function stopsound() {
+                if (audio != null) {
+                    audio.pause();
+                }
+                document.getElementById("music_icon").setAttribute("play", "on");
+                $("#musicControl").attr("play", "on")
+            }
+            
+            function startsound(event) {
+                window.removeEventListener("touchstart", startsound);
+            
+                if (audio == null) {
+                    audio = document.getElementById("audio");
+                }
+            
+                audio.play();
+                
+                document.getElementById("music_icon").setAttribute("play", "stop");
+                $("#musicControl").attr("play", "stop")
+            
+                timestamp = new Date().getTime();
+            }
+            
+            window.addEventListener("touchstart", startsound);
+
+            </script>
+            	</div>
+	<div class="mp-bg-area">
+		
+                <div id="userMessage">
+                    <h1 class="mp-title">百威诺顿啤酒集团(中国)有限公司</h1>
+                    <div class="read">
+                        阅读&nbsp;<span>33</span>
+                    </div>
+                    <div class="user-nickName">
+                        <a class="toappuser" href="https://www.meipian.cn/c/16517855">-</a>
+                    </div>
+                </div>
+		<div class="mp-content" id="mp-content">
+			<div class="mp-section section-on text-up"><div class="text"><h3>百威诺顿啤酒(中国)有限公司，相比较其他啤酒品牌，拥有先进的德国制作工艺和德国设备；带来的啤酒味道更醇正。其品质优良，酿造工艺独特，口味醇正，工艺精湛，采用优质进口澳洲大麦芽为原料；采用的水源地处黄山南麓的休宁县，其境内天都峰、莲山峰是休宁横江无污染的源头水，清澈优质的水源为酿造口感佳的“诺顿”啤酒提供了有利的保障。</h3></div><style>
+            .img-box {position: relative;}
+            .img-box span.gif-img-tips {
+                background: #000!important;
+                background: rgba(0,0,0,.6)!important;
+                filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr="rgba(153, 0, 0, 0)",endcolorstr = "rgba(153, 0, 0, 0)");
+                border-radius: 1.2em;
+                line-height: 2.3;
+                font-size: 11px;
+                color: #fff;
+                text-align: center;
+                position: absolute;
+                bottom: 10px;
+                left: 10px;
+                min-width: 65px;
+                z-index: 1
+            }
+            .img-box span.gif-img-tips i {
+                display: inline-block;
+                width: 0;
+                height: 0;
+                border: 8px dashed transparent;
+                border-right-width: 0;
+                border-left-color: #fff;
+                border-left-style: solid;
+                border-width: 5px 0 5px 8px;
+                vertical-align: middle;
+                margin: -.2em .73em 0 -2px
+            }
+            .img-box img {
+                width: 100%;
+                display: block
+            }
+        </style><div class="img-box"><img src="http://static2.ivwen.com/users/16517855/2e19cfcd1d8d40f38e4acfc368952b66.jpg-mobile"onclick="preview(0)" /></div></div><div class="mp-section section-on text-up"><div class="text"><h3>百威诺顿啤酒是一种底部发酵的淡味型啤酒，采用经过轻微烘焙的淡啤麦芽、苦味啤酒花和底部发酵酵母酿制而成，从而呈现出深受人们喜爱的清爽顺口的口感，该酒具有醇厚幽雅的麦香味。这款苦度适中的啤酒，凭借产品自身的优势得到越来越多的人的认可和喜爱。</h3></div><style>
+            .img-box {position: relative;}
+            .img-box span.gif-img-tips {
+                background: #000!important;
+                background: rgba(0,0,0,.6)!important;
+                filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr="rgba(153, 0, 0, 0)",endcolorstr = "rgba(153, 0, 0, 0)");
+                border-radius: 1.2em;
+                line-height: 2.3;
+                font-size: 11px;
+                color: #fff;
+                text-align: center;
+                position: absolute;
+                bottom: 10px;
+                left: 10px;
+                min-width: 65px;
+                z-index: 1
+            }
+            .img-box span.gif-img-tips i {
+                display: inline-block;
+                width: 0;
+                height: 0;
+                border: 8px dashed transparent;
+                border-right-width: 0;
+                border-left-color: #fff;
+                border-left-style: solid;
+                border-width: 5px 0 5px 8px;
+                vertical-align: middle;
+                margin: -.2em .73em 0 -2px
+            }
+            .img-box img {
+                width: 100%;
+                display: block
+            }
+        </style><div class="img-box"><img src="http://static2.ivwen.com/users/16517855/f92e63bfa08e446894b4aa45497de62d.jpg-mobile"onclick="preview(1)" /></div></div><div class="mp-section section-on text-up"><div class="text"><h3>百威诺顿啤酒其口感醇和柔顺，酒体完整，是一款时尚潮流的啤酒，更受人们喜爱。百威诺顿啤酒相对于其他品牌价格适中，是大众年轻消费者可以接受的范围。百威诺顿啤酒酒类品种多样可以满足不同消费者的口味需求。</h3></div><style>
+            .img-box {position: relative;}
+            .img-box span.gif-img-tips {
+                background: #000!important;
+                background: rgba(0,0,0,.6)!important;
+                filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr="rgba(153, 0, 0, 0)",endcolorstr = "rgba(153, 0, 0, 0)");
+                border-radius: 1.2em;
+                line-height: 2.3;
+                font-size: 11px;
+                color: #fff;
+                text-align: center;
+                position: absolute;
+                bottom: 10px;
+                left: 10px;
+                min-width: 65px;
+                z-index: 1
+            }
+            .img-box span.gif-img-tips i {
+                display: inline-block;
+                width: 0;
+                height: 0;
+                border: 8px dashed transparent;
+                border-right-width: 0;
+                border-left-color: #fff;
+                border-left-style: solid;
+                border-width: 5px 0 5px 8px;
+                vertical-align: middle;
+                margin: -.2em .73em 0 -2px
+            }
+            .img-box img {
+                width: 100%;
+                display: block
+            }
+        </style><div class="img-box"><img src="http://static2.ivwen.com/users/16517855/6cdfd4b0569a4f47b0e8d8d0654bddab.jpg-mobile"onclick="preview(2)" /></div></div><script>
+        function preview(i)
+        {
+            var imgList = ["http://static2.ivwen.com/users/16517855/2e19cfcd1d8d40f38e4acfc368952b66.jpg?meipian-raw/bucket/ivwen/key/dXNlcnMvMTY1MTc4NTUvMmUxOWNmY2QxZDhkNDBmMzhlNGFjZmMzNjg5NTJiNjYuanBn/sign/d3bd3d34ec719ab7ac05e4f72abd01d0.jpg","http://static2.ivwen.com/users/16517855/f92e63bfa08e446894b4aa45497de62d.jpg?meipian-raw/bucket/ivwen/key/dXNlcnMvMTY1MTc4NTUvZjkyZTYzYmZhMDhlNDQ2ODk0YjRhYTQ1NDk3ZGU2MmQuanBn/sign/184f0eb5f000232225fe91a7da27a5fb.jpg","http://static2.ivwen.com/users/16517855/6cdfd4b0569a4f47b0e8d8d0654bddab.jpg?meipian-raw/bucket/ivwen/key/dXNlcnMvMTY1MTc4NTUvNmNkZmQ0YjA1NjlhNGY0N2IwZThkOGQwNjU0YmRkYWIuanBn/sign/41dbc4db596274259434c0b7704cf7d8.jpg"];
+            
+            if (window.android)
+            {
+                window.android.previewImage(i, imgList);
+            }
+    
+            var message = {
+                current: imgList[i],
+                urls:  imgList
+            };
+            try
+            {
+                wx.previewImage(message);
+            }
+            catch (err) {}
+            window.webkit.messageHandlers.previewImage.postMessage(message);
+        }
+    </script>		</div>
+		<div class="meipian-bg-blur"></div>
+	</div>
+</div>
+
+<style>
+    #music{
+        position: fixed !important;
+        z-index: 200000;
+        display: none;
+        opacity: 0;
+        width: 24px;
+        height: 24px;
+        text-align: center;
+        line-height: 18px;
+        font-size: 16px;
+        border-radius: 50%;
+        top: 55px;
+        right: 10px;
+        transtion: all .5s;
+        -webkit-transition: all .5s;
+        overflow: hidden;
+    }
+    #music.show{
+        opacity: 1;
+        transtion: all .5s;
+        -webkit-transition: all .5s;
+    }
+    #musicControl{
+        width: 24px;
+        height: 24px;
+        display: block;
+        background-image: url("https://ss2.meipian.me/theme/v2/img/floatmusic.png");
+        background-size: 100%;
+        background-position: center;
+    }
+    #musicControl[play=stop]{
+        display: block;
+        top: -60px;
+        animation-name: rotate;
+        animation-delay: 0s;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        -webkit-animation-name: rotate;
+        -webkit-animation-delay: 0s;
+        -webkit-animation-duration: 4s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+     }
+    @-webkit-keyframes rotate{
+        from{transform: rotate(0);-webkit-transform: rotate(0);}
+        to{transform: rotate(-360deg);-webkit-transform: rotate(-360deg);}
+    }
+    @keyframes rotate{
+        from{transform: rotate(0);-webkit-transform: rotate(0);}
+        to{transform: rotate(-360deg);-webkit-transform: rotate(-360deg);}
+    }
+
+</style>
+
+<div id="music">
+    <i id="musicControl" onclick="switchsound()"></i>
+</div>
+
+<script>
+    $(window).scroll(function(){
+        if(document.body.scrollTop > 150){
+            document.getElementById("music").style.display = "block";
+            setTimeout(function(){
+                document.getElementById("music").classList.add("show");
+            })
+        }else{
+            document.getElementById("music").classList.remove("show");
+            if(document.getElementById("music").style.display == "block"){
+                setTimeout(function () {
+                    document.getElementById("music").style.display = "none";
+                },500)
+            }
+        }
+    });
+    $(function () {
+        var os = getUserAgent(window.navigator.userAgent).os.name;
+        if(os == "ios"){
+            $("#musicControl").addClass("ios");
+        }
+            })
+</script><script>
+    $(function () {
+        $(".tousers").click(function () {
+            window.location.href = "http://www.meipian.cn/static/reward_users.php?articleid=pa8vt9t"
+        })
+    })
+</script>
+<div class="meipian_meta report clearfix"><span>阅读 33</span><span class="fr"><a style="line-height: 28px;" href="https://www.meipian.cn/resources/components/report.php?id=pa8vt9t" rel="nofollow">举报</a></span></div><div id="autherLink">
+    <div class="autherwrap" style="height: 100%;">
+        <a class="toappuser" href='https://www.meipian.cn/c/16517855'>
+            <div class="autherHead">
+                <img src="http://static2.ivwen.com/users/16517855/46c334bf17cb4920944c444e670da295.jpg"/>
+            </div>
+            <div class="userMessage">
+                <p class="wusername" style="overflow: hidden">
+                    -                </p>
+                <p class="wsign">
+                                    </p>
+            </div>
+            <div class="right iconfont icon-arrow"></div>
+        </a>
+    </div>
+</div>
+<div class="comment">
+    <div class="commentwrap">
+    <div class="title">
+        <i class="fl color-lump"></i>
+        <h2 class="fl brilliant">最新评论</h2>
+    </div>
+    
+        <p id="comment_tips" style="padding: 24px 0 24px;">
+            暂无评论
+        </p><div class="download_app"">一键制作你自己的美篇</div></div>
+</div>
+
+<script type="text/javascript">
+    $(".commentLastTime").each(function(index, ele) {
+        var time = $(ele).html();
+        $(ele).html(formatMsgTime(time));
+    });
+</script>
+<script>
+    var u = navigator.userAgent;
+    var isAND = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1; // 安卓
+    var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+    var isQQBrowser = u.indexOf('MQQBrowser') > -1;
+    var isWX = u.indexOf('MicroMessenger') > -1;
+
+    $(".toappuser").on('click', function (e) {
+        e.preventDefault();
+        callApp({
+            type: "c",
+            id: 16517855,
+            weburl: "https://www.meipian.cn/c/16517855",
+            params: 'from=callapp'
+        })
+    });
+    $(".commentwrap").on('click', '.toappuserother', function (e) {
+        e.preventDefault();
+        var id = $(this).attr("data-id");
+        if(id) {
+            callApp({
+                type: "c",
+                id: id,
+                weburl: "https://www.meipian.cn/c/" + id,
+                params: 'from=callapp'
+            })
+        }
+    });
+    $(".download_app").click(function () {
+    //    window.location.href = "https://www.meipian.cn/app/http/download.php?channel=comment&from=comment";
+        callappdownload({
+            from: 'comment',
+            word: '',
+            maskId: 'nocomment'
+        });
+    });
+
+    function getQueryString (name) {
+        var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i')
+
+        var r = window.location.search.substr(1).match(reg)
+
+        if (r != null) {
+            return unescape(r[2])
+        }
+
+        return null
+    }
+    function articleclick(id) {
+        callApp({
+            type: 'article',
+            id: id,
+            weburl: "" + id,
+            params: "from=callapp",
+        });
+        $.ajax({
+            type: "get",
+            url: "" + "app/http/article_redirect.php?maskid=" + id,
+        });
+    }
+
+    function callappdownload(_ref) {
+        var _ref$from = _ref.from,
+            from = _ref$from === undefined ? '' : _ref$from,
+            _ref$word = _ref.word,
+            word = _ref$word === undefined ? '' : _ref$word,
+            _ref$maskId = _ref.maskId,
+            maskId = _ref$maskId === undefined ? '' : _ref$maskId;
+
+        callApp({
+            type: 'comment',
+            id: maskId,
+            weburl: window.location.origin + '/app/http/download.php',
+            params: '' + (from ? 'from=' + from : '') + (word ? (from ? '&' : '') + 'word=' + word : '')
+        });
+    }
+
+    function callApp(_ref2) {
+        var _ref2$type = _ref2.type,
+            type = _ref2$type === undefined ? '' : _ref2$type,
+            _ref2$id = _ref2.id,
+            id = _ref2$id === undefined ? '' : _ref2$id,
+            _ref2$weburl = _ref2.weburl,
+            weburl = _ref2$weburl === undefined ? '' : _ref2$weburl,
+            _ref2$params = _ref2.params,
+            params = _ref2$params === undefined ? '' : _ref2$params;
+        // 类型 id 是否去应用宝
+        if (id) {
+            if (false) {
+                if (isIOS) {
+                    var a = document.createElement('a');
+                    a.style.display = 'none';
+                    a.href = weburl; //打开app
+                    document.body.appendChild(a);
+                    a.click();
+                } else {
+                    window.location.href = '' + weburl + (params ? '?' + params : '');
+                }
+            } else {
+                if (isIOS) {
+                    type = type === 'article' ? '' : type;
+
+                    if (isQQBrowser || isWX) {
+                        window.location.href = (window.location.host.indexOf('t-') > -1 ? 'https://t-a.meipian.cn' : 'https://a.meipian.cn') + (type ? '/' + type : '') + '/' + id; //  + (params ? '?' + params : '')
+                    } else {
+                        window.location.href = weburl
+                    }
+                } else if (isAND) {
+                    if (isQQBrowser || isWX) {
+                        if(getQueryString("v")){
+                            var androidSchema = 'meipian://main.app/' + type + '/' + id;
+                            window.location.href = window.location.origin + '/app/http/download.php?android_schema=' + androidSchema + '&v=' + getQueryString("v") + (params ? '&' + params : '');
+                        }else{
+                            window.location.href = '' + weburl + (params ? '?' + params : '');
+                        }
+                    } else {
+                        window.location.href = '' + weburl + (params ? '?' + params : '');
+                        // callAppIframe('meipian://main.app/' + type + '/' + id, '' + weburl + (params ? '?' + params : ''));
+                    }
+                } else {
+                    window.location.href = '' + weburl + (params ? '?' + params : '');
+                }
+            }
+        } else {
+            window.location.href = '' + weburl + (params ? '?' + params : '');
+        }
+    }
+    function callAppIframe(appurl, weburl) {
+        var t = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 500;
+
+        var start = new Date();
+
+        var ifr = document.createElement('iframe');
+        ifr.src = appurl; //打开app
+        ifr.style.display = 'none';
+
+        document.body.appendChild(ifr);
+
+        setTimeout(function () {
+            document.body.removeChild(ifr);
+            var end = new Date(); //记录结束时间
+
+            console.log(end - start);
+
+            if (end - start <= t + 30) {
+                //两者之差小于30ms时跳转到下载页
+                window.location.href = weburl;
+            }
+        }, t);
+    }
+</script><img class="bannermeipian" style="width: 100%;padding-top: 8px;display: block" src="http://static2.ivwen.com/config/38cb2bbc6661e63b56cfac3282d62482.jpg"/><div id="self_bottom">
+    <div class="self_bottom_wrap" style="background-color: #fff;">
+        <a href="https://www.meipian.cn/app/http/download.php?from=introducemeipian" style="display: block">
+            <img style="width: 100%;display: block;" src="http://static2.ivwen.com/theme/v2/img/self_bottom_meipian.jpg" alt="">
+        </a>
+    </div>
+</div><style>
+    #rightads{
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        margin-left: 414px;
+        width: 324px;
+        height: 220px;
+    }
+    #rightads a{
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+    #rightads a img{
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+    #rightads #close_pc_ads{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        right: 10px;
+        top: 10px;
+        background-image: url("https://ss2.meipian.me/web/ads/close_pc_ads_right.png");
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    @media screen and (max-width: 1024px) {
+        #rightads{
+            display: none;
+        }
+    }
+</style>
+
+<div id="rightads">
+    <a target="_blank" id="to_pc_ads" href="https://www.meipian.cn/1003">
+        <img src="http://static2.ivwen.com/config/9861b2eba6488ba9b195710e63eadd0d.jpg" alt="">
+    </a>
+    <div id="close_pc_ads"></div>
+</div>
+
+<script>
+//    $.ajax({
+//        url: 'https://www.meipian.cn/app/stat/article_count_new.php',
+//        data: {anchor: sta_pc_side_ad_anchor_4,event_type: 'click'},
+//        success: function (res) {
+//            console.log(res);
+//        }
+//    })
+    $("#to_pc_ads").click(function () {
+        $.ajax({
+            url: 'https://www.meipian.cn/app/stat/article_count_new.php',
+            data: {anchor: 'sta_pc_side_ad_anchor_4',event_type: 'clicked'},
+            success: function (res) {
+                console.log(res);
+            }
+        })
+    })
+    $("#close_pc_ads").click(function () {
+        $("#rightads").fadeOut(.4);
+    })
+</script><script>
+    (function(){
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script></div></div>
+<script>
+    console.log('10.47.137.152');
+    function videoPause() {
+        var videos = document.querySelectorAll('video');
+        for (var i=0; i<videos.length; ++i) {
+            videos[i].pause()
+        }
+    }
+    var isFromWechat = '0';
+    // console.log(isFromWechat);
+    function pushHistory() {
+        if (history.length < 2) {
+            var state = {
+                title: "下载页面",
+                url: "default/download_meipian.php" + window.location.search
+            };
+            var url = location.href;
+            window.history.replaceState(state, null, state.url);
+            window.history.pushState(null, "index", url);
+            // alert(history.length);
+        }
+    }
+    // console.log(window.location.search);
+    if(isFromWechat == '1'){
+        setTimeout(function () {
+            pushHistory()
+            window.addEventListener("popstate", function (e) {
+                // console.log("popstate:"+window.history.state)
+                if (window.history.state != null && window.history.state.url != "") {
+                    location.reload();
+                }
+            },false);
+        }, 300);
+    }
+</script>
+</body></html>
